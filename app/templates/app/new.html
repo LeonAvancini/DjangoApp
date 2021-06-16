@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'app/css/app-styles.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<h2 class="titulo-secundario">Nuevo Articulo</h2>
+
+<form action="">
+  <div class="form-group">
+    <label for="titulo" class="form__label">Titulo</label>
+    <input type="text" class="form__input">
+  </div>
+  <div class="form-group">
+    <label for="descripcion" class="form__label">Descripcion</label>
+    <textarea name="descripcion" class="form__textarea" rows="3"></textarea>
+  </div>
+</form>
+
+{% endblock %}

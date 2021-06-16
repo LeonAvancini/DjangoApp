@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #b5b5b5;
+}
+
+.header {
+  background-color: rgb(109, 109, 109);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  color: white;
+  margin-left: 1rem;
+}
+
+.header__logo {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.8rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
