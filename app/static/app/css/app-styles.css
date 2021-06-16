@@ -9,7 +9,7 @@
 }
 
 .blog__contenedor {
-  max-width: 500px;
+  width: 60%;
   margin: 4rem auto;
   background-color: white;
   padding: 2rem;
