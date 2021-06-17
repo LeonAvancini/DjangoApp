@@ -9,4 +9,11 @@
 
 <h2 class="titulo-secundario">Lista de Articulos</h2>
 
+{% for articulo in articulos %}
+<div>
+  <h3>{{ articulo.titulo }}</h3>
+  <p>{{ articulo.descripcion }}</p>
+</div>
+{% endfor %}
+
 {% endblock %}

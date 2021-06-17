@@ -5,11 +5,10 @@ from django.shortcuts import render
 from .models import Articulo
 
 # Create your views here.
-
-
 def index(request):
-    context = {}
-    print(now())
+    context = {
+      'articulos' : Articulo.objects.all()
+    }
     return render(request, 'app/list.html', context)
 
 
@@ -19,7 +18,6 @@ def new(request):
 
 
 def ArticulosList(request):
-    articulos = Articulo.objects.all()
 
     if request.method == 'POST':
         articuloUno = Articulo()
@@ -27,5 +25,6 @@ def ArticulosList(request):
         articuloUno.descripcion = request.POST["descripcion"]
         articuloUno.save()
 
+    articulos = Articulo.objects.all()
     context = {'articulos': articulos}
     return render(request, 'app/list.html', context)
