@@ -9,7 +9,7 @@ class Articulo(models.Model):
   class Meta:
     db_table = 'articulos' #nombre de la tabla
     verbose_name = 'articulos' #nombre en el sitio administrativo
-    ordering = ['id'] 
+    ordering = ['titulo'] 
 
   def __str__(self):
     return self.titulo
