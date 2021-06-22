@@ -1,5 +1,5 @@
 .btn-crear {
-  background-color: green;
+  background-color: rgb(35, 149, 35);
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -42,4 +42,47 @@
 .form__input:focus-visible, .form__textarea:focus-visible {
   outline: none;
   border: 1.5px solid green;
+}
+
+.submit--button {
+  text-decoration: none;
+  padding: .8rem 1rem;
+  background-color: rgb(35, 149, 35);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit--button:hover {
+  background-color: rgb(40, 192, 40);
+}
+
+/* Lista Articulos */
+
+.articulo__container {
+  padding: 1rem;
+  /* background-color: orangered; */
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.articulo__buttons__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.articulo__button--delete {
+  text-decoration: none;
+  padding: 1rem;
+  background-color: rgb(248, 44, 44);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.articulo__button--delete:hover {
+  background-color: rgb(175, 2, 2);
 }

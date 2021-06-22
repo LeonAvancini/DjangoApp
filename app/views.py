@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.utils.timezone import now
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Articulo
 
 # Create your views here.
@@ -29,3 +29,11 @@ def ArticulosList(request):
     articulos = Articulo.objects.all()
     context = {'articulos': articulos}
     return render(request, 'app/list.html', context)
+
+def EliminarArticulo(request, id):
+
+    articulo = Articulo.objects.get(pk=id)
+    articulo.delete()
+    print('Eliminado!')
+
+    return redirect('/blog')

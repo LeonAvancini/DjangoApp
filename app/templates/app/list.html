@@ -10,9 +10,12 @@
 <h2 class="titulo-secundario">Lista de Articulos</h2>
 
 {% for articulo in articulos %}
-<div>
-  <h3>{{ articulo.titulo }}</h3>
-  <p>{{ articulo.descripcion }}</p>
+<div class="articulo__container">
+  <h3 class="articulo__title">{{ articulo.titulo }}</h3>
+  <p class="articulo__description">{{ articulo.descripcion }}</p>
+  <div class="articulo__buttons__container">
+    <a class="articulo__button--delete" href="/blog/eliminarArticulo/{{articulo.id}}">Eliminar</a href="">
+  </div>
 </div>
 {% endfor %}
 
