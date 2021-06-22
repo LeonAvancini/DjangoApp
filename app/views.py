@@ -23,7 +23,6 @@ def ArticulosList(request):
         articuloUno = Articulo()
         articuloUno.titulo = request.POST["titulo"]
         articuloUno.descripcion = request.POST["descripcion"]
-        print(request.POST['imagen'])
         articuloUno.save()
 
     articulos = Articulo.objects.all()
